@@ -9,7 +9,7 @@ import house from '../src/assets/img/House.png'
 import iceCream from '../src/assets/img/IceCream.png'
 import hammer from '../src/assets/img/hammer1234.png'
 import chat from '../src/assets/img/chat.svg'
-
+import './App.css'
 
 function App() {
   return (
@@ -21,10 +21,13 @@ function App() {
           alt=""
         />
       </div>
-      <div className="fixed bottom-0 right-0 px-4 py-4">
-        <button>
-          
-          <img src={chat} alt="" />
+      <div className="fixed bottom-0 right-0 z-40 px-10 py-10">
+        <button className="flex px-4 py-4 transition duration-500 transform shadow-xl mostrar hover:scale-x-110 rounded-3xl">
+          <div className="hidden">
+            <p className='text-azul'>¿En qué podemos ayudarte?</p>
+            <p className='text-sm text-celeste'>Chatea con nosotros</p>
+          </div>
+          <img className="ml-2" src={chat} alt="" />
         </button>
       </div>
       <Header />
